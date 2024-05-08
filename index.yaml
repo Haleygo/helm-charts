@@ -9129,6 +9129,44 @@ entries:
       artifacthub.io/operator: "true"
     apiVersion: v2
     appVersion: v1.100.0
+    created: "2024-05-08T04:32:32.713891804Z"
+    dependencies:
+    - condition: victoria-metrics-k8s-stack.enabled
+      name: victoria-metrics-k8s-stack
+      repository: https://victoriametrics.github.io/helm-charts
+      version: 0.20.*
+    description: A Helm chart for Running VMCluster on Multiple Availability Zones
+    digest: 2e0bd15eb45788021e70cc177f9ca7439b63e9af11d570be711fff5d95374d94
+    home: https://github.com/VictoriaMetrics/helm-charts
+    keywords:
+    - victoriametrics
+    - operator
+    - monitoring
+    - kubernetes
+    - observability
+    - tsdb
+    - metrics
+    - metricsql
+    - timeseries
+    kubeVersion: '>=1.25.0-0'
+    name: victoria-metrics-distributed
+    sources:
+    - https://github.com/VictoriaMetrics/helm-charts
+    type: application
+    urls:
+    - https://github.com/Haleygo/helm-charts/releases/download/victoria-metrics-distributed-0.1.2/victoria-metrics-distributed-0.1.2.tgz
+    version: 0.1.2
+  - annotations:
+      artifacthub.io/category: monitoring-metrics
+      artifacthub.io/license: Apache-2.0
+      artifacthub.io/links: |
+        - name: Charts repo
+          url: https://victoriametrics.github.io/helm-charts/
+        - name: Docs
+          url: https://docs.victoriametrics.com
+      artifacthub.io/operator: "true"
+    apiVersion: v2
+    appVersion: v1.100.0
     created: "2024-05-07T16:33:44.357055782Z"
     dependencies:
     - condition: victoria-metrics-k8s-stack.enabled
@@ -19552,4 +19590,4 @@ entries:
     urls:
     - https://victoriametrics.github.io/helm-charts/packages/victoria-metrics-single-0.0.1.tgz
     version: 0.0.1
-generated: "2024-05-07T16:33:44.35839964Z"
+generated: "2024-05-08T04:32:32.715590107Z"
