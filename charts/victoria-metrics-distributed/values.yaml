@@ -26,7 +26,7 @@ availabilityZones:
     # -- nodeselector to restrict where pods of this zone can be placed.
     # usually provided by cloud providers.
     nodeSelector:
-      topology.kubernetes.io/zone: zone-eu-1
+      test-distributed-chart/zone: zone-a
     # -- extraAffinity adds user defined custom affinity rules
     extraAffinity: {}
     # -- topologySpreadConstraints allows to customize the default topologySpreadConstraints.
@@ -91,7 +91,7 @@ availabilityZones:
     # -- nodeselector to restrict where pods of this zone can be placed.
     # usually provided by cloud providers.
     nodeSelector:
-      topology.kubernetes.io/zone: zone-us-1
+      test-distributed-chart/zone: zone-b
     # -- extraAffinity adds user defined custom affinity rules
     extraAffinity: {}
     # -- topologySpreadConstraints allows to customize the default topologySpreadConstraints.
